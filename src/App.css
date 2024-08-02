@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: 0.5s;
 }
 .root{
   width: 500px;
@@ -25,7 +27,6 @@
 }
 .root>p{
   line-height: 20px;
-  color: gray;
 }
 .span{
   color: red;
@@ -37,4 +38,19 @@
   &:hover{
     color: rgba(255, 0, 0, 0.582);
   }
+}
+.ionIconsDiv{
+  position: absolute;
+  left:0;
+  top: 0;
+  margin: 20px;
+}
+.sunDiv>ion-icon{
+  cursor: pointer;
+  font-size: 35px;
+}
+.moonDiv>ion-icon{
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
 }
