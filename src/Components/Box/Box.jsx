@@ -1,4 +1,5 @@
 import { useState } from "react";
+import IonIcon from "../IonIcon/IonIcon";
 
 function Box() {
     const [showText,setShowText] = useState(true)
@@ -12,6 +13,7 @@ function Box() {
     }
     return(
         <div className="box">
+            <IonIcon/>
             <div className="root">
                 <h2>Information</h2>
                 <p onClick={clickFunction}>{text} <span className="span">{showText ? "Less" : "More"}</span> </p>
